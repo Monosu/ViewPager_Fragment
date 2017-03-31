@@ -26,7 +26,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
-    compile project(':library')
     compile 'com.alibaba:fastjson:1.2.30'
     compile 'de.greenrobot:eventbus:3.0.0-beta1'
 }

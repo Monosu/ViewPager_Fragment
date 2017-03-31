@@ -4,8 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.astuetz.PagerSlidingTabStrip;
+import com.example.linxi.viewpager_fragment.base.BaseFragmentPagerAdapter;
 import com.example.linxi.viewpager_fragment.base.CustomerViewPager;
 
 /**
@@ -18,6 +21,11 @@ public class CyclingLineActivity extends FragmentActivity {
     public static final String PARAMS_RANKING_TYPE="CyclingLineActivity.route.type";
     private CustomerViewPager mRankingPager;
     private PagerSlidingTabStrip mPagerTab;
+    private BaseFragmentPagerAdapter mPagerAdapter;
+
+    private LinearLayout mBtnBack;
+    private TextView mTextTitle;
+    private LinearLayout mBtnMenu;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
