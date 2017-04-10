@@ -9,6 +9,7 @@ import android.widget.Scroller;
  */
 
 public class ViewPagerScroller extends Scroller {
+
     private int mScrollerDuration=600;//滑动速度
     public ViewPagerScroller(Context context) {
         super(context);
@@ -20,11 +21,12 @@ public class ViewPagerScroller extends Scroller {
 
     @Override
     public void startScroll(int startX, int startY, int dx, int dy) {
-        super.startScroll(startX, startY, dx, dy);
+        super.startScroll(startX, startY, dx, dy,mScrollerDuration);
     }
 
     @Override
     public void startScroll(int startX, int startY, int dx, int dy, int duration) {
-        super.startScroll(startX, startY, dx, dy, duration);
+        this.mScrollerDuration=duration;
+        super.startScroll(startX, startY, dx, dy, mScrollerDuration);
     }
 }
