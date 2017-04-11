@@ -16,4 +16,5 @@ public abstract class BaseMenu {
     private PopupWindow mPopupWindow;
     private ListView mListView;
 
+
 }

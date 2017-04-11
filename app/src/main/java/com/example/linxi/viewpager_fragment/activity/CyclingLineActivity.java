@@ -7,9 +7,12 @@ import android.support.v4.app.FragmentActivity;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.astuetz.PagerSlidingTabStrip;
+
 import com.example.linxi.viewpager_fragment.base.BaseFragmentPagerAdapter;
 import com.example.linxi.viewpager_fragment.base.CustomerViewPager;
+import com.example.linxi.viewpager_fragment.base.PagerSlidingTabStrip;
+
+import static com.example.linxi.viewpager_fragment.R.styleable.PagerSlidingTabStrip;
 
 /**
  * Created by linxi on 2017/3/30.

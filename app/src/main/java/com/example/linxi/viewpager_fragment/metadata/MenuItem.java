@@ -1,0 +1,41 @@
+package com.example.linxi.viewpager_fragment.metadata;
+
+/**
+ * Created by linxi on 2017/4/11.
+ */
+
+public class MenuItem {
+    private String mContentText;
+    private int mIconRes;
+    private int mId;
+
+    public MenuItem(String mContentText, int mIconRes, int mId) {
+        this.mContentText = mContentText;
+        this.mIconRes = mIconRes;
+        this.mId = mId;
+    }
+
+    public String getmContentText() {
+        return mContentText;
+    }
+
+    public void setmContentText(String mContentText) {
+        this.mContentText = mContentText;
+    }
+
+    public int getmIconRes() {
+        return mIconRes;
+    }
+
+    public void setmIconRes(int mIconRes) {
+        this.mIconRes = mIconRes;
+    }
+
+    public int getmId() {
+        return mId;
+    }
+
+    public void setmId(int mId) {
+        this.mId = mId;
+    }
+}
