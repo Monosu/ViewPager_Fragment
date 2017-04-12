@@ -9,10 +9,10 @@ public class MenuItem {
     private int mIconRes;
     private int mId;
 
-    public MenuItem(String mContentText, int mIconRes, int mId) {
-        this.mContentText = mContentText;
-        this.mIconRes = mIconRes;
-        this.mId = mId;
+    public MenuItem( int resId,String text, int id) {
+        mContentText = text;
+        mIconRes = resId;
+        mId = id;
     }
 
     public String getmContentText() {

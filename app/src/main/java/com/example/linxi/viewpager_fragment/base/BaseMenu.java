@@ -1,13 +1,16 @@
 package com.example.linxi.viewpager_fragment.base;
 
 import android.content.Context;
-import android.support.v7.view.menu.MenuAdapter;
+import android.graphics.drawable.ColorDrawable;
+
 
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 
+import com.example.linxi.viewpager_fragment.adapter.MenuAdapter;
 import com.example.linxi.viewpager_fragment.metadata.MenuItem;
 
 /**
@@ -44,13 +47,38 @@ public abstract class BaseMenu {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               // MenuItem item=(MenuItem) mContentAdapter.getItem(position);
+               MenuItem item = (MenuItem) mContentAdapter.getItem(position);
                 if (mListener!=null){
 
                     //mListener.onMenuSelected(mMenuView,item,position);
                 }
+                mPopupWindow.dismiss();
             }
         });
+
+        mPopupWindow=new PopupWindow(mMenuView, ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT,true);
+        mPopupWindow.setBackgroundDrawable(new ColorDrawable(0x00000000));
+    }
+
+    public void addItem(int resId,String text,int id){
+        mContentAdapter.addItem(resId,text,id);
+        mContentAdapter.notifyDataSetChanged();
+    }
+
+    public void  clear(){
+        mContentAdapter.clear();
+        mContentAdapter.notifyDataSetChanged();
+    }
+
+    public void show(View parent){
+        mPopupWindow.showAsDropDown(parent);
+    }
+    public void dismiss(){
+        mPopupWindow.dismiss();
+    }
+    public void  setOnItemSelectedListener(IMenuItemSelectedListener listener){
+        mListener=listener;
     }
 
 }

@@ -16,8 +16,7 @@ import com.example.linxi.viewpager_fragment.util.DeviceUtil;
 import java.util.ArrayList;
 
 /**
-<<<<<<< Updated upstream
- * Created by linxi on 2017/3/31.
+ * Created by linxi on 2017/4/11.
  */
 
 public class MenuAdapter extends BaseAdapter {
@@ -25,8 +24,8 @@ public class MenuAdapter extends BaseAdapter {
     protected Context mContext;
     protected LayoutInflater mInflater;
 
-    public MenuAdapter(Context mContext) {
-        this.mContext = mContext;
+    public MenuAdapter(Context context) {
+        mContext = context;
         mInflater = LayoutInflater.from(mContext);
     }
 
@@ -86,11 +85,11 @@ public class MenuAdapter extends BaseAdapter {
                 icon.setImageResource(item.getmId());
             }
         }
-            return convertView;
+        return convertView;
     }
 
-    public void  addItem(String content,int resId,int id ){
-        mList.add(new MenuItem(content,resId,id));
+    public void  addItem(int resId,String content,int id ){
+        mList.add(new MenuItem(resId,content,id));
     }
     public void  clear(){
         mList.clear();
