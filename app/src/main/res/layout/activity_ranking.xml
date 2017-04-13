@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#ffffffff"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <include
-        android:id="@+id/title_layout"/>
+        android:id="@+id/title_layout"
+        layout="@layout/title_secondary_page_layout"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.linxi.viewpager_fragment.base.PagerSlidingTabStrip
+            android:id="@+id/tab_strip"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_white_to_fragment_bg"
+            app:pstsIndicatorColor="#ff07bc08"
+            app:pstsIndicatorGravity="bottom"
+            app:pstsShouldExpand="true"
+            app:pstsIndicatorHeight="2dp"
+            pstsTabSelectTextColor="#ff07bc08"
+            pstsTabTextSize="16dp"
+            app:pstsUnderlineHeight="1dp"/>
+
+        <com.example.linxi.viewpager_fragment.base.CustomerViewPager
+            android:id="@+id/ranking_Pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
 
 </LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通用二级标题栏布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#ff07bc08"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp" >
+
+    <LinearLayout
+        android:id="@+id/secondary_page_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/transparent_bg"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_back_bg" />
+
+        <TextView
+            android:id="@+id/secondary_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/secondary_page_title_btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent_bg"
+        android:gravity="center"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/secondary_page_title_btn_search"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/transparent_bg"
+        android:scaleType="fitCenter"
+        android:src="@drawable/title_search"
+        android:layout_marginRight="10dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/secondary_page_title_btn_menu"
+        android:layout_width="45dip"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/transparent_bg"
+            android:clickable="false"
+            android:id="@+id/menu_btn_id"
+            android:scaleType="fitCenter"
+            android:src="@drawable/title_menu" />
+    </LinearLayout>
+
+</LinearLayout>
