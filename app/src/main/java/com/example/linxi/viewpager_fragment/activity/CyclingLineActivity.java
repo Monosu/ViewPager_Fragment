@@ -17,6 +17,7 @@ import com.example.linxi.viewpager_fragment.base.CustomerViewPager;
 import com.example.linxi.viewpager_fragment.base.IMenuItemSelectedListener;
 import com.example.linxi.viewpager_fragment.base.PagerSlidingTabStrip;
 import com.example.linxi.viewpager_fragment.customs.CustomMenu;
+import com.example.linxi.viewpager_fragment.fragment.CyclingLineFragment;
 
 import static com.example.linxi.viewpager_fragment.R.styleable.PagerSlidingTabStrip;
 
@@ -99,7 +100,9 @@ public class CyclingLineActivity extends FragmentActivity implements View.OnClic
     private void initPagerView() {
         mPagerAdapter=new BaseFragmentPagerAdapter(getSupportFragmentManager());
         Bundle args=new Bundle();
-        //args.putInt(cycling);
+        args.putInt(CyclingLineFragment.PARAMS_CATEGORY,0);
+
+        CyclingLineFragment dayRanking=new CyclingLineFragment();
     }
     private void onGotoMyCycling() {
         startActivity(new Intent(this,TackListActivity.class));

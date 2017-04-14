@@ -5,4 +5,5 @@ package com.example.linxi.viewpager_fragment.fragment;
  */
 
 public class CyclingLineFragment {
+    public static final String PARAMS_CATEGORY ="RankingFragment.category" ;
 }

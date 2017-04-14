@@ -20,7 +20,6 @@
             android:layout_height="50dp"
             android:background="@drawable/selector_white_to_fragment_bg"
             app:pstsIndicatorColor="#ff07bc08"
-            app:pstsIndicatorGravity="bottom"
             app:pstsShouldExpand="true"
             app:pstsIndicatorHeight="2dp"
             pstsTabSelectTextColor="#ff07bc08"

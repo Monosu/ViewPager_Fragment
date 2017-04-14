@@ -1,5 +1,6 @@
 package com.example.linxi.viewpager_fragment.base;
 
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
@@ -76,6 +77,8 @@ public class BaseFragment extends Fragment {
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                Dialog mDialog=new Dialog(getActivity());
+                //mDialog.sett
 
             }
         });

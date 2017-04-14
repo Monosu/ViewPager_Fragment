@@ -6,5 +6,7 @@
     <color name="color_gray">#ff808080</color>
 
     <color name="background_tab_pressed">#6633B5E5</color>
-
+    <color name="skin_color">#ff07bc08</color>
+    <color name="fragment_bg_color">#ffededed</color>
+    <color name="common_bg">#ffffffff</color>
 </resources>
