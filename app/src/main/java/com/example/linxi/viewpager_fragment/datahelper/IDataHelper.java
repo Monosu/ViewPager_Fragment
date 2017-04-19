@@ -15,4 +15,5 @@ public interface IDataHelper {
     int login(RqstMsg rqstMsg, UserLogin info );
     int logout(RqstMsg rqstMsg, Logout info);
     int setSink(IDataHelperSink sink);
+
 }
