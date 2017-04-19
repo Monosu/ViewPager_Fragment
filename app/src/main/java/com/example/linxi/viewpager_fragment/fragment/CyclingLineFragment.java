@@ -9,5 +9,5 @@ import com.example.linxi.viewpager_fragment.base.BaseFragment;
 public class CyclingLineFragment extends BaseFragment{
     private static final String TAG = CyclingLineFragment.class.getSimpleName();
     public static final String PARAMS_CATEGORY ="RankingFragment.category" ;
-
+    //private
 }
