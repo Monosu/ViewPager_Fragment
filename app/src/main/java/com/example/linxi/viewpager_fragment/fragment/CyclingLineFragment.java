@@ -3,6 +3,7 @@ package com.example.linxi.viewpager_fragment.fragment;
 import android.view.View;
 
 import com.example.linxi.viewpager_fragment.base.BaseFragment;
+import com.example.linxi.viewpager_fragment.customs.CustomXListView;
 import com.example.linxi.viewpager_fragment.datahelper.IDataHelper;
 
 /**
@@ -18,6 +19,6 @@ public class CyclingLineFragment extends BaseFragment{
     private long sinceId=0;
     private View mContentView;
 
-    //private CustomXListView mRankingList;
+    private CustomXListView mRankingList;
 
 }
